@@ -1,0 +1,444 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>Test小林计算机</title>
+    <link rel="stylesheet" href="static/css/index.css" />
+    <!--<style>-->
+        <!--html,body {-->
+            <!--background-image: url("//tc.xiaolin.mcxhz.cn/images/2019/01/19/2017-03-03_29.jpg");-->
+            <!--color: #333;-->
+        <!--}-->
+        <!--/* 好歹还是加个边框吧 */-->
+        <!--.display-block {-->
+            <!--padding: 10px;-->
+            <!--border: 2px solid rgb(0,155,255);-->
+            <!--margin: 10px;-->
+            <!--overflow: auto;-->
+            <!--width: 400px; height: 90vh;-->
+            <!--float: left;-->
+            <!--background: rgba(0,155,255,0.5);-->
+        <!--}-->
+        <!--/* 还差一个版块来介绍自己 */-->
+        <!--.intro-box{-->
+            <!--margin: 10px;-->
+            <!--padding: 12px;-->
+            <!--min-height: 110vh;-->
+            <!--overflow: hidden;-->
+            <!--background: rgba(0,100,205,0.5);-->
+        <!--}-->
+        <!--/* 使命完成了，给主要的版块让让位置吧 */-->
+        <!--.display-block {-->
+            <!--transform-origin: 0 50%;-->
+             <!-- -webkit-transform: rotateY(30deg);-->
+            <!--transform: rotateY(30deg);-->
+            <!--margin-right: -100px;-->
+        <!--}-->
+    <!--</style>-->
+</head>
+<body>
+<div class="preload-block">
+    <img src="https://tc.xiaolin.mcxhz.cn/images/2019/02/03/6f6196f2gy1fgsxbr1390j21hc0zkncd.jpg" />
+</div>
+
+<div class="welcome-block j-welcome-block  ">
+    <div class="welcome-block-main rel">
+        <div class="welcome-box-center j-welcome-box-center">
+            <span class="welcome-text j-welcome-text line1">额，趁现在资源还在加载</span>
+            <span class="welcome-text j-welcome-text line2">我先给你讲一个冷笑话</span>
+            <span class="welcome-text j-welcome-text line3">有一个叫程思序的人</span>
+            <span class="welcome-text j-welcome-text line4">整天思程序</span>
+            <span class="welcome-text j-welcome-text line5">．．．．．．</span>
+            <span class="welcome-text j-welcome-text line6">好尴尬，我们来看看资源加载完没有</span>
+            <span class="welcome-text j-welcome-text line7 fail">哇塞，居然没加载完！</span>
+            <span class="welcome-text j-welcome-text line7 success">哇塞，已经加载完了！</span>
+            <span class="welcome-text j-welcome-text line8 fail">那别怪没音乐特效了~</span>
+            <span class="welcome-text j-welcome-text line8 success">那我们就立刻开始吧！</span>
+            <span class="welcome-text-line">|</span>
+            <div class="welcome-btn-start"></div>
+        </div>
+
+        <div class="welcome-box-btn j-welcome-box-btn hide">
+            <input placeholder="" type="checkbox" class="j-welcome-btn">
+            <span class="welcome-btn"></span>
+            <p class="welcome-text-tip">点击按钮后记得使用滚轮哟</p>
+            <p class="welcome-text-add">
+                <a target="_blank" href="https://github.com/senschen/SensWorld">代码地址1</a>
+                <br>
+                <a target="_blank" href="https://github.com/senschen/SensWorldVue">代码地址2(vue版)</a>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="sky-block j-sky-block  ">
+    <div id="j-wrapper-block-back" class="wrapper-block">
+        <div id="j-stage-block-back" class="stage-block-back">
+            <img src="https://ws1.sinaimg.cn/large/6f6196f2gy1fgsxbr1390j21hc0zkncd.jpg" ondragstart="return false"
+                 class="wrapper-img j-wrapper-img-back"/>
+            <canvas id="wrapper-cvs" class="wrapper-cvs j-wrapper-cvs"></canvas>
+        </div>
+    </div>
+    <div class="wrapper-block-main j-wrapper-block-main">
+        <div class="stage-block-main j-stage-block-main">
+            <div class="stage-box-earth j-stage-box-earth">
+                <img src="https://tc.xiaolin.mcxhz.cn/images/2019/02/03/6f6196f2gy1fgsxez3vu7j20bc0bcqbl.png" alt="" class="j-stage-img-earth">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="intro-block j-intro-block  hide">
+    <div class="style-block"></div>
+    <pre class="display-block">
+    </pre>
+    <div class="intro-box">
+        <div class="intro-box-main j-intro-box-main  hide">
+            <p class="intro-box-hide">&emsp;&emsp;我叫XXX，15年毕业于重庆理工大学计算机科学与技术学院</p>
+            <p class="intro-box-hide">&emsp;&emsp;15年年初开始在猪八戒网络有限公司品牌市场相关部门，从事前端开发工作</p>
+            <p class="intro-box-hide">&emsp;&emsp;擅长页面重构、动画（css、js、canvas）</p>
+            <p class="intro-box-hide">&emsp;&emsp;在公司主要做品牌、活动相关项目的开发以及外投用的下单页面的开发</p>
+            <p class="intro-box-hide">&emsp;&emsp;平时工作用到的框架技术FIS-Plus、Vue及相关技术栈、Nodejs</p>
+            <h3 class="intro-box-hide">&emsp;&emsp;部分参与的项目：</h3>
+            <ul class="intro-list-task">
+                <li class="intro-box-hide">
+                    <p class="c-fff">2015：<a class="ud" href="http://cyy.zbj.com/" target="_blank">猪八戒进产业园官网+线下产业园</a>+微信版产业园 ---（ps：均已停止维护有1年之久）</p>
+                    <p class="intro-text-desc">主要功能有面向客户提供企业注册申请功能；<br>
+                        面向运营人员提供新闻的配置和显示功能；<br>
+                        面向运营人员提供线下园区的配置和显示功能</p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2015：<a class="img" href="javascript:" target="">八戒网盟推广平台 <img src="https://ws1.sinaimg.cn/large/6f6196f2gy1fgsxjczt08j20vl0n9jso.jpg" alt=""></a></p>
+                    <p class="intro-text-desc">面向合作方提供广告代码自动生成功能<br>
+                        面向合作方提供广告效果数据查询展示功能；</p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2015：<a class="img" href="javascript:" target="">猪八戒创业者频道 <img src="https://ws1.sinaimg.cn/large/6f6196f2gy1fgsxjdvbr9j21a80o7adz.jpg" alt=""></a></p>
+                    <p class="intro-text-desc">面向运营人员提供版块的配置和显示功能<br>
+                        面向客户提供表单申请功能</p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2016：<a class="ud" href="http://sandbox.runjs.cn/show/2q2yqzeb" target="_blank">猪八戒新年开门红活动</a>（此处链接为demo链接）</p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2016：全站订单来源统计功能</p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2016：<a class="ud" href="http://bang.zbj.com/" target="_blank">新版八戒众帮</a></p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2016：<a class="ud" href="http://88.zbj.com/redPacket/Main.html" target="_blank">猪八戒88免单节报名页以及抢购页</a></p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2016：<a class="ud" href="http://10years.zbj.com/" target="_blank">猪八戒十周年官网</a></p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2016：<a class="ud" href="http://city.zbj.com/" target="_blank">八戒城市部分分站</a></p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2017：<a class="ud" href="http://zt.tianpeng.com/ztoper/tp/20170427tppp/" target="_blank">天蓬网订单快速发布功能</a></p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2017：<a class="img" href="javascript:" target="">猪八戒服务商数字名片活动 <img src="https://ws1.sinaimg.cn/large/6f6196f2gy1fgsxjd5qcbj20ch0qigm2.jpg" alt=""></a></p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2017：<a class="ud" href="http://xiaoyuan.zbj.com/" target="_blank">八戒校园</a></p>
+                </li>
+                <li class="intro-box-hide">
+                    <p class="c-fff">2017：<a class="ud" href="http://csr.zbj.com/" target="_blank">八戒阳光</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="static/js/MusicVisualizer.js"></script>
+<script src="static/js/makeSky.js"></script>
+<script src="static/js/breakImg.js"></script>
+<script>
+    var Cookie = (function () {
+        function setCookie(name, value, day) {
+            var oDate = new Date();
+            oDate.setDate(oDate.getDate() + day);
+            document.cookie = name + '=' + value + ';expires=' + oDate;
+        }
+        function delCookie(name) {
+            setCookie(name, 1, -1);
+        }
+        function getCookie(name) {
+            var arr = document.cookie.split('; ');
+            for(var i = 0; i < arr.length; i++) {
+                var arrName = arr[i].split('=');
+                if(arrName[0] == name) {
+                    return arrName[1];
+                }
+            }
+            return '';
+        }
+        return {
+            set: setCookie,
+            del: delCookie,
+            get: getCookie
+        }
+    })();
+
+    var runPrefixMethod = function(element, method) {
+        var usablePrefixMethod;
+        ["webkit", "moz", "ms", "o", ""].forEach(function(prefix) {
+            if (usablePrefixMethod) return;
+            if (prefix === "") {
+                method = method.slice(0,1).toLowerCase() + 	method.slice(1);
+            }
+
+            var typePrefixMethod = typeof element[prefix + method];
+
+            if (typePrefixMethod + "" !== "undefined") {
+                if (typePrefixMethod === "function") {
+                    usablePrefixMethod = element[prefix + method]();
+                } else {
+                    usablePrefixMethod = element[prefix + method];
+                }
+            }
+        });
+
+        return usablePrefixMethod;
+    };
+
+    var prmFirst = new Promise(function (resolve) {
+        var step = 0;
+        var isLoaded = false;
+        var lastSum = 0;
+
+        var mv = new MusicVisualizer({
+            size: 128,
+            visualizer: function (arr) {
+                if(step === 3) return;
+                var sum = arr.reduce(function (prevResult, item) {
+                    return prevResult + item;
+                });
+                if (sum > 5000) {
+                    if(lastSum - sum > 500){
+                        $('.j-wrapper-block-main').css({
+                            'transform': 'scale(0.5)'
+                        });
+
+                        lastSum = sum;
+                    }
+                    else if(sum - lastSum > 200){
+                        $('.j-wrapper-block-main').css({
+                            'transform': 'scale(' + (0.5 + 2*(sum - lastSum) / 10000) + ')'
+                        });
+                        lastSum= sum;
+                    }
+                }
+                else {
+                    $('.j-wrapper-block-main').css({
+                        'transform': 'scale(0.5)'
+                    });
+                    lastSum = sum;
+                }
+            }
+        });
+        mv.play('static/res/Routine.mp3',function () {
+            isLoaded = true;
+            if(step > 0){
+                mv.start();
+            }
+        });
+
+        if(!Cookie.get('finished')){
+            var welComeText = document.getElementsByClassName('j-welcome-text');
+            [].forEach.call(welComeText,function (item) {
+                item.classList.add('play');
+            });
+
+            setTimeout(function () {
+                var _removeFlagStr = isLoaded ? 'fail' : 'success';
+                [].forEach.call(welComeText, function (item) {
+                    if (item.classList.contains(_removeFlagStr)) {
+                        item.remove();
+                    }
+                });
+            },8000);
+            //welcome-box-center
+            setTimeout(function () {
+                document.getElementsByClassName('j-welcome-box-center')[0].classList.add('die');
+                setTimeout(function () {
+                    document.getElementsByClassName('j-welcome-box-center')[0].remove();
+                    document.getElementsByClassName('j-welcome-box-btn')[0].classList.remove('hide');
+                    document.getElementsByClassName('j-welcome-box-btn')[0].classList.add('show');
+                },1800);
+            },11000);
+        }
+        else {
+            document.getElementsByClassName('j-welcome-box-center')[0].remove();
+            document.getElementsByClassName('j-welcome-box-btn')[0].classList.remove('hide');
+            document.getElementsByClassName('j-welcome-box-btn')[0].classList.add('show');
+        }
+
+        function step2() {
+            step = 1;
+
+            if(isLoaded){
+                mv.start();
+            }
+            setTimeout(function () {
+                runPrefixMethod(document.documentElement, "RequestFullScreen");
+                document.getElementsByClassName('j-welcome-block')[0].classList.add('hide');
+            },1000);
+
+            makeSky.init(function (far) {
+                if (step === 1 && far > 200) {
+                    step = 2;
+                    $('.j-wrapper-block-main').css({
+                        'z-index': '20'
+                    });
+                    $('.j-stage-block-main').css({
+                        'transform': 'translate3d(0,0,0)'
+                    });
+                    $('.j-stage-box-earth').click(function () {
+                        step = 3;
+                        var $this = $(this);
+                        if ($this.hasClass('no')) return;
+                        $this.addClass('shake no');
+                        var bi1 = new MakeBreakImg({
+                            el: $('.j-stage-img-earth')
+                        });
+                        var bi2 = new MakeBreakImg({
+                            el:  $('.j-wrapper-img-back'),
+                            strStyle: 'position: relative;z-index: 10;opacity: 0.5',
+                            itemSpl: 10
+                        });
+
+                        makeSky.backToStart(function () {
+                            $('body').addClass('nocursor');
+                            $('.j-wrapper-cvs').fadeOut(1000);
+                            $('#j-wrapper-block-back').css('perspective','none');
+
+                            bi1.makeBreak();
+                            bi2.makeBreak();
+
+                            try {
+                                mv.slow(); //有时候直到现在 音乐都没有加载完
+                            }
+                            catch (e){}
+
+                            setTimeout(function () {
+                                $('.j-sky-block').remove();
+                                $('.j-intro-block').removeClass('hide');
+                                setTimeout(resolve,3000);
+                            }, 1000);
+                        });
+                    });
+
+                }
+            });
+
+            var timeSeed = 0;
+            window.onresize = function () {
+                timeSeed && clearTimeout(timeSeed);
+                timeSeed = setTimeout(function () {
+                    makeSky.restart();
+                }, 200);
+            };
+
+            setTimeout(function () {
+                document.getElementsByClassName('j-welcome-block')[0].remove();
+            }, 2000);
+        }
+
+        document.getElementsByClassName('j-welcome-btn')[0].addEventListener('click',function () {
+            if(!Cookie.get('finished')){
+                Cookie.set('finished','1',1);
+            }
+
+            step2();
+            step2 = function () {};
+        });
+
+        document.body.addEventListener("dblclick", function() {
+            if (runPrefixMethod(document, "FullScreen") || runPrefixMethod(document, "IsFullScreen")) {
+                runPrefixMethod(document, "CancelFullScreen");
+            } else {
+                runPrefixMethod(document.documentElement, "RequestFullScreen");
+            }
+        });
+
+    });
+
+    prmFirst.then(function () {
+        return new Promise(function (resolve) {
+            var code =
+                `
+/* ......
+* 厉害了我的哥，这下玩坏了吧！
+* 没办法，那只能重新造一个网页了╮(╯_╰)╭
+*/
+
+/* 首先给所有元素加上过渡效果 */
+* {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+/* 还是用绚烂的星空背景才有逼格 */
+html,body {
+    background-image: url("https://tc.xiaolin.mcxhz.cn/images/2019/01/19/2017-03-03_29.jpg");
+    color: #333;
+}
+/* 好歹还是加个边框吧 */
+.display-block {
+    padding: 10px;
+    border: 2px solid rgb(0,155,255);
+    margin: 10px;
+    overflow: auto;
+    width: 400px; height: 90vh;
+    float: left;
+    background: rgba(0,155,255,0.5);
+}
+/* 还差一个版块来介绍自己 */
+.intro-box{
+    padding: 12px;
+    background: rgba(0,55,205,0.3);
+    margin: 10px;
+    min-height: 110vh;
+    overflow: hidden;
+}
+/* 使命完成了，给主要的版块让让位置吧 */
+.display-block {
+    transform-origin: 0 50%;
+    -webkit-transform: rotateY(30deg);
+    transform: rotateY(30deg);
+    margin-right: -100px;
+}
+`;
+            var idx = 0;
+            var len = code.length;
+            function appendStyle() {
+                $('.style-block').html('<style>' + code.slice(0,idx++) + '</style>');
+                $('.display-block').text(code.slice(0,idx)).scrollTop(9999);
+                if(idx === len){
+                    resolve();
+                    return;
+                }
+                setTimeout(appendStyle,30);
+            }
+            appendStyle();
+        });
+    }).then(function () {
+        $('body').removeClass('nocursor');
+        $('.j-intro-box-main').removeClass('hide');
+        var $introBoxHide = $('.intro-box-hide');
+        var len = $introBoxHide.length;
+        for (var i = 0; i < len; i++) {
+            (function (i) {
+                setTimeout(function () {
+                    $introBoxHide.eq(i).addClass('show');
+                },i*500);
+            })(i)
+        }
+    });
+</script>
+</body>
+</html>

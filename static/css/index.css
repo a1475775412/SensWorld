@@ -1,0 +1,545 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", sans-serif;
+    background-color: #000;
+}
+body.nocursor{
+    cursor: none!important;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    background-color: #2F73BC;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #6E8EB7;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #0D4690;
+}
+
+.welcome-block,.sky-block{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.hide{
+    display: none;
+}
+img{
+    vertical-align: top;
+}
+p{
+    margin: .5em 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff6900;
+}
+a.ud{
+    border-bottom: 1px solid #fff;
+}
+a.img{
+    border-bottom: 1px dashed #fff;
+}
+a.img img{
+    display: none;
+    max-width: 90%;
+}
+a.img:hover img{
+    display: inline;
+}
+.rel{
+    position: relative;
+}
+.preload-block img{
+    display: inline-block!important;
+    width: 0!important;
+    height: 0!important;
+    visibility: hidden!important;
+    line-height: 0!important;
+    box-sizing: border-box!important;
+}
+
+.welcome-block{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #DADCDF;
+    transition: all 2s;
+}
+.welcome-block.fadeout{
+    opacity: 0;
+}
+.welcome-block-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    z-index: 10;
+    text-align: center;
+}
+.welcome-block-main:after{
+    display: inline-block;
+    height: 100%;
+    content: '';
+    vertical-align: middle;
+}
+.welcome-box-center{
+    width: 320px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+.welcome-box-center.die {
+    transition: all 2s;
+    transform: rotate(1800deg) scale(0,0);
+}
+.welcome-text{
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    vertical-align: top;
+    font-size: 20px;
+    white-space: nowrap;
+}
+.line1.play{
+    animation: lineShow1 2s forwards;
+    animation-timing-function: steps(1,end);
+}
+.line2.play{
+    animation: lineShow2 1s forwards 2s;
+    animation-timing-function: steps(10,end);
+}
+.line3.play{
+    animation: lineShow3 1s forwards 3.5s;
+    animation-timing-function: steps(9,end);
+}
+.line4.play{
+    animation: lineShow4 .5s forwards 5s;
+    animation-timing-function: steps(5,end);
+}
+.line5.play{
+    animation: lineShow5 1s forwards 6s;
+    animation-timing-function: steps(6,end);
+}
+.line6.play{
+    animation: lineShow6 1s forwards 7s;
+    animation-timing-function: steps(16,end);
+}
+.line7.play{
+    animation: lineShow7 1s forwards 8.5s;
+    animation-timing-function: steps(10,end);
+}
+.line8.play{
+    animation: lineShow8 1s forwards 9.5s;
+    animation-timing-function: steps(10,end);
+}
+
+@keyframes lineShow1 {
+    0%{
+        width: 0;
+    }
+    10%{
+        width: 1em;
+    }
+    20%{
+        width: 2em;
+    }
+    60%{
+        width: 3em;
+    }
+    65%{
+        width: 4em;
+    }
+    70%{
+        width: 5em;
+    }
+    75%{
+        width: 6em;
+    }
+    80%{
+        width: 7em;
+    }
+    85%{
+        width: 8em;
+    }
+    90%{
+        width: 9em;
+    }
+    95%{
+        width: 10em;
+    }
+    99.99%{
+        width: 11em;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes lineShow2 {
+    0%{
+        width: 0;
+    }
+    99.99%{
+        width: 10em;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes lineShow3 {
+    0%{
+        width: 0;
+    }
+    99.99%{
+        width: 9em;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes lineShow4 {
+    0%{
+        width: 0;
+    }
+    99.99%{
+        width: 5em;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes lineShow5 {
+    0%{
+        width: 0;
+    }
+    99.99%{
+        width: 6em;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes lineShow6 {
+    0%{
+        width: 0;
+    }
+    99.99%{
+        width: 16em;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes lineShow7 {
+    0%{
+        width: 0;
+    }
+    99.99%{
+        width: 10em;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes lineShow8 {
+    0%{
+        width: 0;
+    }
+    99.99%{
+        width: 10em;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.welcome-text-line{
+    animation: lineBling 1s infinite;
+    animation-timing-function: steps(2,end);
+    opacity: 1;
+    font-size: 20px;
+}
+@keyframes lineBling {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.welcome-text-add{
+    position: absolute;
+    width: 140px;
+    top: 270px;
+    text-decoration: underline;
+    text-align: center;
+}
+.welcome-text-add a{
+    color: #ff7900;
+    font-size: 16px;
+}
+
+.wrapper-block{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #060E1B;
+    overflow: hidden;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+.wrapper-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    vertical-align: top;
+    z-index: 10;
+    opacity: .5;
+}
+.wrapper-cvs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.stage-block-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,0);
+    z-index: 20;
+}
+
+.wrapper-block-main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 100000px;
+    perspective-origin: 50% 50%;
+    z-index: -1;
+    transition: all 0.1s;
+}
+.stage-block-main{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s;
+    transform: translate3d(0,0,-10000000px);
+}
+
+.stage-box-earth{
+    width: 408px;
+    height: 408px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.stage-box-earth.shake{
+    animation-name:anishake;
+    animation-duration: .2s;
+    animation-timing-function:linear;
+    animation-iteration-count: 5;
+    -webkit-animation-name:anishake;
+    -webkit-animation-duration: .2s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count: 5
+}
+@keyframes anishake
+{
+    0%  {transform: translate(-50%,-50%) rotate(0deg);}
+    25% {transform: translate(-70%,-50%) rotate(10deg);}
+    50% {transform: translate(-50%,-50%) rotate(0deg);}
+    75% {transform: translate(-30%,-50%) rotate(-10deg);}
+    100%{transform: translate(-50%,-50%) rotate(0deg);}
+}
+@-webkit-keyframes anishake
+{
+    0%  {transform: translate(-50%,-50%) rotate(0deg);}
+    25% {transform: translate(-70%,-50%) rotate(10deg);}
+    50% {transform: translate(-50%,-50%) rotate(0deg);}
+    75% {transform: translate(-30%,-50%) rotate(-10deg);}
+    100%{transform: translate(-50%,-50%) rotate(0deg);}
+}
+
+
+.welcome-box-btn {
+    display: inline-block;
+    box-shadow:
+            inset 0 0 35px 5px rgba(0, 0, 0, 0.25),
+            inset 0 2px 1px 1px rgba(255, 255, 255, 0.9),
+            inset 0 -2px 1px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background: #ccd0d4;
+    position: relative;
+    height: 140px;
+    width: 140px;
+    top: -1000px;
+    transition: top 1s;
+}
+.welcome-box-btn.show{
+    top: 0;
+}
+
+.welcome-btn {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+    transition: all 300ms ease;
+    box-shadow:
+            0 15px 25px -4px rgba(0, 0, 0, 0.5),
+            inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2),
+            0 -10px 15px -1px rgba(255, 255, 255, 0.6),
+            inset 0 3px 4px -1px rgba(255, 255, 255, 0.2),
+            inset 0 0 5px 1px rgba(255, 255, 255, 0.8),
+            inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    background: #ccd0d4;
+    margin-left: -48.16px;
+    margin-top: -48.16px;
+    display: block;
+    height: 96.32px;
+    width: 96.32px;
+    left: 50%;
+    top: 50%;
+}
+.welcome-box-btn input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.welcome-box-btn input:active ~ .welcome-btn {
+    box-shadow:
+            0 15px 25px -4px rgba(0, 0, 0, 0.4),
+            inset 0 -8px 30px 1px rgba(255, 255, 255, 0.9),
+            0 -10px 15px -1px rgba(255, 255, 255, 0.6),
+            inset 0 8px 25px 0 rgba(0, 0, 0, 0.4),
+            inset 0 0 10px 1px rgba(255, 255, 255, 0.6);
+}
+
+.welcome-box-btn input:focus ~ .welcome-btn {
+    box-shadow:
+            0 15px 25px -4px rgba(0, 0, 0, 0.4),
+            inset 0 -8px 25px -1px rgba(255, 255, 255, 0.9),
+            0 -10px 15px -1px rgba(255, 255, 255, 0.6),
+            inset 0 8px 20px 0 rgba(0, 0, 0, 0.2),
+            inset 0 0 5px 1px rgba(255, 255, 255, 0.6);
+}
+
+.welcome-text-tip{
+    position: absolute;
+    white-space: nowrap;
+    bottom: -120px;
+    font-size: 30px;
+    background-image: -webkit-linear-gradient(left, #147B96, #ff6900 25%, #147B96 50%, #ff6900 75%, #147B96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(-50%,0);
+    left: 50%;
+    -webkit-background-size: 200% 100%;
+    animation: masked 1s infinite linear;
+}
+@keyframes masked {
+    0%  {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.wrapper-box-link{
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+}
+
+
+
+.intro-block{
+    overflow: hidden;
+    perspective: 1000px;
+    perspective-origin: 10px 400px;
+}
+.display-block{
+    color: #fff;
+}
+.intro-box{
+    color: #eee;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.c-fff{
+    color: #fff;
+}
+.intro-text-desc{
+    font-size: 14px;
+    color: #ececec;
+}
+.intro-list-task>li{
+    margin-bottom: 40px;
+}
+.intro-box-hide{
+    visibility: hidden;
+}
+.intro-box-hide.show{
+    animation: show 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes show {
+    0%{
+        visibility: visible;
+        opacity: 0;
+        transform: translate(100px,-20px);
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0,0);
+    }
+}
